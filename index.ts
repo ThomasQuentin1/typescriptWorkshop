@@ -7,6 +7,8 @@ const requestHandler = async (
   response: ServerResponse
 ) => {
   const meteo = await getMeteo("strasbourg");
+  //const meteo = await getMeteo(1);
+
   response.end("Ici doit s'afficher la météo");
 };
 

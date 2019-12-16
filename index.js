@@ -4,6 +4,8 @@ const port = 3000;
 
 const requestHandler = async (request, response) => {
   const meteo = await getMeteo();
+  //const meteo = await getMeteo(1);
+
   response.end("Ici doit s'afficher la météo");
 };
 
