@@ -1,9 +1,10 @@
 const http = require("http");
+const getMeteo = require("./apiJavascript").getMeteo;
 const port = 3000;
 
-const requestHandler = (request, response) => {
-  console.log(request.url);
-  response.end("Hello Node.js Server!");
+const requestHandler = async (request, response) => {
+  const meteo = await getMeteo();
+  response.end("Ici doit s'afficher la météo");
 };
 
 const server = http.createServer(requestHandler);
