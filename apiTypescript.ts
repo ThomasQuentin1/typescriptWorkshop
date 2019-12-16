@@ -60,3 +60,5 @@ export const  getMeteo = async (city: string) : Promise<apiResponse>=> {
     const jsonObject  = await response.json() as apiResponse;
    return jsonObject
 }
+
+// step 2 fetch this api and print the data. you must make the interface: https://jsonplaceholder.typicode.com/todos/3
