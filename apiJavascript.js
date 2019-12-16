@@ -1,4 +1,4 @@
-import fetch from "isomorphic-unfetch";
+import fetch from "fetch";
 
 const getMeteo = async city => {
   const location =

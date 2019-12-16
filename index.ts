@@ -1,6 +1,6 @@
 import { createServer, IncomingMessage, ServerResponse } from "http";
 import { getMeteo } from "./apiTypescript";
-const port: number = 3000;
+const port: number = 5000;
 
 const requestHandler = async (
   request: IncomingMessage,
