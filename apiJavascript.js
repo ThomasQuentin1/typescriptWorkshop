@@ -1,3 +1,5 @@
+import fetch from "isomorphic-unfetch";
+
 const getMeteo = async city => {
   const location =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
