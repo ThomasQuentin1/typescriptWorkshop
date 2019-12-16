@@ -1,10 +1,21 @@
 # typescriptWorkshop
 
 ## Installation
+avec yarn
 
+        yarn
+        
+avec npm
 
-    yarn ou npm install
+        npm install
     
 ## Lancement
 
+avec yarn
+
     yarn ts ou yarn js
+    
+avec npm
+
+
+    npm run ts ou npm run js
