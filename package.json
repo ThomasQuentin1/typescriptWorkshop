@@ -1,0 +1,21 @@
+{
+  "name": "typescriptWorkshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ThomasQuentin1/typescriptWorkshop.git",
+  "author": "Tom Florentin <tom.florentin@epitech.eu>",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "node": "^13.3.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.17"
+  },
+  "scripts": {
+    "js": "node index.js",
+    "ts": "ts-node index.ts"
+  }
+}
