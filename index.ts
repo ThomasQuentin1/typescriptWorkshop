@@ -1,4 +1,4 @@
-import http, { IncomingMessage, ServerResponse } from "http";
+import { createServer, IncomingMessage, ServerResponse } from "http";
 import { getMeteo } from "./apiTypescript";
 const port: number = 3000;
 
@@ -12,7 +12,7 @@ const requestHandler = async (
   response.end("Ici doit s'afficher la météo");
 };
 
-const server = http.createServer(requestHandler);
+const server = createServer(requestHandler);
 
 server.listen(port, () => {
   console.log(`Javascript nodejs is listening on ${port}`);
