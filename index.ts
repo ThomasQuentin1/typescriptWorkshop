@@ -1,1 +1,13 @@
-console.log("ts");
+import http from "http";
+const port: number = 3000;
+
+const requestHandler = (request, response) => {
+  console.log(request.url);
+  response.end("Hello Node.js Server!");
+};
+
+const server = http.createServer(requestHandler);
+
+server.listen(port, () => {
+  console.log(`Javascript nodejs is listening on ${port}`);
+});
